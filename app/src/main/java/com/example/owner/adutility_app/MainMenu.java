@@ -26,6 +26,7 @@ public class MainMenu extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
     }
 
     @Override
@@ -48,5 +49,12 @@ public class MainMenu extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+}
+
+public class Activity {
+    public void calculateBreakdown(Menu menu) {
+        EditText text = (EditText) findViewById(R.id.);
+        String value = text.getText().toString();
     }
 }
