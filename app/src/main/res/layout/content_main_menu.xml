@@ -184,4 +184,22 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/editText4"
         app:layout_constraintEnd_toStartOf="@+id/editText4" />
 
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_currency_symbol"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_currency_symbol"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/textView8" />
+
 </android.support.constraint.ConstraintLayout>
