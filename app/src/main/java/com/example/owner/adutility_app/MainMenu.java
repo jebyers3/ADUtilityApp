@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat; // for output format when displaying cost of utilities
+
 
 public class MainMenu extends AppCompatActivity {
     private EditText gas_in, elec_in, misc_in, num_tenants_in;
@@ -47,9 +49,15 @@ public class MainMenu extends AppCompatActivity {
                 //calculate cost of utilities
                 total_utility_cost = gas + elec_etc + misc;
                 cost_per_person = total_utility_cost/num_tenants;
+                //format calculations to proper format "#,###.#0"   Ex:  $85.00 instead of $85.0
+                DecimalFormat output_format = new DecimalFormat ("#,##0.00");
+                String total_util,
+                        per_pers_cost;
+                total_util = output_format.format(total_utility_cost);
+                per_pers_cost = output_format.format(cost_per_person);
                 //display what was calculated
-                utility_tot_out.setText(String.valueOf(total_utility_cost));
-                cost_per_person_out.setText(String.valueOf(cost_per_person));
+                utility_tot_out.setText(total_util);
+                cost_per_person_out.setText(per_pers_cost);
             }
         });
 /*
