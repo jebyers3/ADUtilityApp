@@ -38,7 +38,7 @@ public class MainMenu extends AppCompatActivity {
         cost_per_person_out=(TextView) findViewById(R.id.textView9);
 
         //code to calculate costs once button clicked
-        final Button button = findViewById(R.id.button);
+        final Button button = findViewById(R.id.calculate);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //Code here executes on main thread after user presses button
