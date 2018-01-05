@@ -104,7 +104,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -200,5 +200,14 @@
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
         app:layout_constraintEnd_toStartOf="@+id/textView8" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/calculate"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        tools:layout_editor_absoluteY="329dp" />
 
 </android.support.constraint.ConstraintLayout>
