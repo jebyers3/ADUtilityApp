@@ -97,7 +97,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        android:text="@string/main_in_placeholder"
+        android:hint="@string/main_in_placeholder"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/editText4"
@@ -207,6 +207,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:clickable="true"
+        android:onClick="sendMessage"
         app:layout_constraintStart_toStartOf="@+id/calculate"
         app:layout_constraintTop_toBottomOf="@+id/calculate"
         app:srcCompat="@android:drawable/stat_notify_chat" />
